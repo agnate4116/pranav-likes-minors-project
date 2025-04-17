@@ -33,7 +33,7 @@ def annotate_image(image: Image.Image, prediction: dict) -> Image.Image:
     return image
 
 def main():
-    st.title("Drowning Detection Streamlit App")
+    st.title("Drowning Detection - Minor Project")
 
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
     
