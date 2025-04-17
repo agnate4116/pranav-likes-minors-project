@@ -4,4 +4,4 @@ streamlit
 python-dotenv
 roboflow
 supervision
-opencv-python
+opencv-python-headless
