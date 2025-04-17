@@ -54,8 +54,8 @@ def main():
 
         conf = results["predictions"][0]["confidence"]
         is_drowning = False
-            if conf < threshold:
-                is_drowning = True
+        if conf < threshold:
+            is_drowning = True
 
         annotated_image = annotate_image(image.copy(), pred)
         st.image(annotated_image, caption="Annotated Image", use_column_width=True)
