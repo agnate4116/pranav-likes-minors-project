@@ -2,3 +2,6 @@ roboflow
 inference-sdk
 streamlit
 python-dotenv
+roboflow
+supervision
+opencv-python
