@@ -52,7 +52,7 @@ def main():
 
         threshold = 0.69
 
-        conf = results["predictions"][0]["confidence"]
+        conf = results["predictions"]["confidence"]
         is_drowning = False
         if conf < threshold:
             is_drowning = True
