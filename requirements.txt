@@ -6,4 +6,3 @@ matplotlib
 inference-sdk
 streamlit
 python-dotenv
-opencv-python-headless
