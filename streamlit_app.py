@@ -50,8 +50,19 @@ def main():
         results = model.predict(path="temp_uploaded.jpg")
         pred = results["predictions"]
 
+        threshold = 0.69
+
+        conf = results["predictions"][0]["confidence"]
+        is_drowning = False
+            if conf < threshold:
+                is_drowning = True
+
         annotated_image = annotate_image(image.copy(), pred)
         st.image(annotated_image, caption="Annotated Image", use_column_width=True)
+        if is_drowning:
+            st.text("Drowning")
+        else:
+            st.text("Not Drowning")
 
         st.success(f"Detected: {pred['class']} with {pred['confidence']:.2f} confidence")
 
