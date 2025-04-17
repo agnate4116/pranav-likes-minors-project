@@ -2,6 +2,9 @@ import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 from model import DrowningDetectionCNN
 import io
+import sys
+import types
+sys.modules['cv2'] = types.SimpleNamespace()
 
 def annotate_image(image: Image.Image, prediction: dict) -> Image.Image:
     draw = ImageDraw.Draw(image)
