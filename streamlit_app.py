@@ -50,7 +50,7 @@ def main():
         results = model.predict(path="temp_uploaded.jpg")
         pred = results["predictions"]
 
-        threshold = 0.69
+        threshold = 0.89
 
         conf = results["predictions"]["confidence"]
         is_drowning = False
