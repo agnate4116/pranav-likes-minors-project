@@ -1,8 +1,4 @@
 roboflow
-tensorflow
-keras
-numpy
-matplotlib
 inference-sdk
 streamlit
 python-dotenv
